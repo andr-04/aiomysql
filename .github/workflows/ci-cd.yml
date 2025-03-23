@@ -65,7 +65,7 @@ jobs:
       wheel-artifact-name: ${{ steps.artifact-name.outputs.wheel }}
     steps:
     - name: Switch to using Python 3.10 by default
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: >-
           3.10
@@ -227,7 +227,7 @@ jobs:
 
     steps:
     - name: Switch to using Python v3.10
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: >-
           3.10
@@ -333,7 +333,7 @@ jobs:
 
     steps:
     - name: Switch to using Python 3.10 by default
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: >-
           3.10
@@ -464,7 +464,7 @@ jobs:
     steps:
     - name: Setup Python ${{ matrix.py }}
       id: python-install
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: ${{ matrix.py }}
 
